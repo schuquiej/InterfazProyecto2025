@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CreacionUsuarios">
    <children>
-      <Label layoutX="95.0" layoutY="14.0" text="Creacion de usuarios">
+      <Label layoutX="59.0" layoutY="14.0" prefHeight="35.0" prefWidth="270.0" text="Creacion de usuarios">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
