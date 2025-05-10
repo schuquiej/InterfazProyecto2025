@@ -6,7 +6,7 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.beans.property.SimpleStringProperty;  // <-- Import necesario
+import javafx.beans.property.SimpleStringProperty;
 
 import java.util.List;
 import java.util.Map;

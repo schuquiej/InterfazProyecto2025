@@ -20,7 +20,7 @@ public class Main extends Application {
 
     private alertas objAlerta = new alertas();
     private boolean estado = false;
-    // Cambiar a private para seguir las buenas prácticas
+
     @FXML
     private TextField usuarioField;
 
@@ -37,18 +37,14 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-    // Métodos que se ejecuta al hacer clic en el botón
     @FXML
     public void handleBoton1(javafx.event.ActionEvent event) throws IOException {
-        // Obtener los valores de los TextField
         String usuario = usuarioField.getText();
         String contraseña = contraseñaField.getText();
 
-        // Mostrar los valores (puedes hacer aquí la validación o la conexión a la base de datos)
         System.out.println("Usuario: " + usuario);
         System.out.println("Contraseña: " + contraseña);
 
-        // Verifica si los campos están vacíos
         if (usuario.isEmpty() || contraseña.isEmpty()) {
 
             objAlerta.mostrarAlerta(Alert.AlertType.ERROR, "Error al iniciar", "Por favor ingresar los datos");
@@ -82,7 +78,6 @@ public class Main extends Application {
         if (estado) {
 
 
-            // Cargar el siguiente escenario (menuPrincipal.fxml)
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/interfaz/menuPrincipal.fxml"));
             Parent root = loader.load();
 
@@ -91,7 +86,6 @@ public class Main extends Application {
             stage.setScene(scene);
             stage.show();
 
-            // Cerrar la ventana actual
             Stage stageActual = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
             stageActual.close();
 

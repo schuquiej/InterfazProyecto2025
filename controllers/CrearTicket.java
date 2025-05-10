@@ -1,14 +1,11 @@
 package controllers;
 
 import Conexiones.manageSql;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
+
 
 public class CrearTicket {
 
@@ -27,10 +24,6 @@ public class CrearTicket {
 
     @FXML
     private TextField textFieldMensaje;
-
-
-
-
 
 
 
@@ -55,6 +48,5 @@ public class CrearTicket {
 
       System.out.println(resultado);
 
-        // Aquí puedes insertar esos datos en la base o usarlos como necesites
     }
 }

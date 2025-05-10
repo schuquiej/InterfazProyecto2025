@@ -16,7 +16,7 @@ public class manageSql {
              PreparedStatement stmt = conn.prepareStatement(query)) {
 
             for (int i = 0; i < parametros.length; i++) {
-                stmt.setObject(i + 1, parametros[i]); // Los índices en SQL comienzan desde 1
+                stmt.setObject(i + 1, parametros[i]);
             }
 
             stmt.executeUpdate();
