@@ -1,31 +1,40 @@
 package Modelos;
 
 public class DetalleTicket {
-private int idTicket;
-private Tecnico tecnico;
-private Adjuntos adjuntos;
 
-    public int idTicket() {
-        return idTicket;
+
+
+    private final int id;
+    private final String titulo;
+    private final String departamento;
+    private final String tecnico;
+    private final String detalle;
+
+    public DetalleTicket(int id, String titulo, String departamento, String tecnico, String detalle) {
+        this.id = id;
+        this.titulo = titulo;
+        this.departamento = departamento;
+        this.tecnico = tecnico;
+        this.detalle = detalle;
     }
 
-    public void setIdTicket(int idTicket) {
-        this.idTicket = idTicket;
+    public int getId() {
+        return id;
     }
 
-    public Tecnico tecnico() {
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public String getDepartamento() {
+        return departamento;
+    }
+
+    public String getTecnico() {
         return tecnico;
     }
 
-    public void setTecnico(Tecnico tecnico) {
-        this.tecnico = tecnico;
-    }
-
-    public Adjuntos adjuntos() {
-        return adjuntos;
-    }
-
-    public void setAdjuntos(Adjuntos adjuntos) {
-        this.adjuntos = adjuntos;
+    public String getDetalle() {
+        return detalle;
     }
 }

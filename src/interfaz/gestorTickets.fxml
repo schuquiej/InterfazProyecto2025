@@ -5,7 +5,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GestorTickets">
    <children>
       <Label layoutX="115.0" layoutY="55.0" prefHeight="38.0" prefWidth="341.0" text="Menu Gestion de tickets">
@@ -13,10 +12,11 @@
             <Font name="System Bold" size="26.0" />
          </font>
       </Label>
-      <Button layoutX="63.0" layoutY="160.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="163.0" text="Creacion de tickets" />
+      <Button layoutX="63.0" layoutY="160.0" mnemonicParsing="false" onAction="#crearTicket" prefHeight="66.0" prefWidth="163.0" text="Creacion de tickets" />
       <Button layoutX="255.0" layoutY="160.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="163.0" text="Asignacion de tickets" />
-      <Button layoutX="63.0" layoutY="254.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="163.0" text="Cambiar estado de ticket" />
-      <Button layoutX="255.0" layoutY="254.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="163.0" text="Consulta de tickets" />
+      <Button layoutX="445.0" layoutY="160.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="163.0" text="Cambiar estado de ticket" />
+      <Button layoutX="63.0" layoutY="253.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="163.0" text="Consulta de tickets" />
       <Button layoutX="436.0" layoutY="254.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="163.0" text="Historial de tickets" />
+      <Button layoutX="255.0" layoutY="254.0" mnemonicParsing="false" onAction="#listadoTickets" prefHeight="66.0" prefWidth="163.0" text="Listado de Tickets" />
    </children>
 </AnchorPane>
