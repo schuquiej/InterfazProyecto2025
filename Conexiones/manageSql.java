@@ -12,6 +12,7 @@ import java.util.Map;
 public class manageSql {
 
     public boolean insertarDatos(String query, Object... parametros) {
+        System.out.println(parametros);
         try (Connection conn = ConexionBD.conectar();
              PreparedStatement stmt = conn.prepareStatement(query)) {
 
@@ -24,6 +25,7 @@ public class manageSql {
             return true;
 
         } catch (Exception e) {
+            System.out.println(e);
             e.printStackTrace();
             return false;
         }
@@ -64,6 +66,30 @@ public class manageSql {
 
         return resultList;
     }
+
+
+
+
+    public boolean actualizarDatos(String query, Object... parametros) {
+        System.out.println(parametros);
+        try (Connection conn = ConexionBD.conectar();
+             PreparedStatement stmt = conn.prepareStatement(query)) {
+
+            for (int i = 0; i < parametros.length; i++) {
+                stmt.setObject(i + 1, parametros[i]);
+            }
+
+            stmt.executeUpdate();
+            System.out.println("Ticket guardado exitosamente.");
+            return true;
+
+        } catch (Exception e) {
+            System.out.println(e);
+            e.printStackTrace();
+            return false;
+        }
+    }
+
 
 
 }

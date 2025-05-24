@@ -5,16 +5,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuPrincipal">
+<AnchorPane prefHeight="501.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuPrincipal">
    <children>
       <Button layoutX="74.0" layoutY="167.0" mnemonicParsing="false" onAction="#gestTikets" prefHeight="90.0" prefWidth="143.0" text="Gestion de tickets" />
       <Button layoutX="277.0" layoutY="167.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="149.0" text="Gestion de usuarios" />
-      <Button layoutX="491.0" layoutY="167.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="150.0" text="Gestion de usuarios" />
+      <Button layoutX="491.0" layoutY="167.0" mnemonicParsing="false" onAction="#menuRoles" prefHeight="90.0" prefWidth="150.0" text="Gestion de roles" />
       <Label layoutX="292.0" layoutY="68.0" prefHeight="38.0" prefWidth="341.0" text="Menu">
          <font>
             <Font name="System Bold" size="26.0" />
          </font>
       </Label>
+      <Button layoutX="74.0" layoutY="300.0" mnemonicParsing="false" onAction="#menuDepartamentos" prefHeight="90.0" prefWidth="143.0" text="Gestion departamentos" />
    </children>
 </AnchorPane>
